@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>拦截窗口</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="updateButton">
+      <property name="text">
+       <string>刷新列表</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="bootCheckBox">
+      <property name="text">
+       <string>开机自启动</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QTreeWidget" name="windowTreeWidget">
+      <column>
+       <property name="text">
+        <string>窗口标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>窗口类</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>所属程序</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>进程ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>状态</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>标题</string>
+       </property>
+       <property name="text">
+        <string>类</string>
+       </property>
+       <property name="text">
+        <string>程序</string>
+       </property>
+       <property name="text">
+        <string>进程</string>
+       </property>
+       <property name="text">
+        <string>状态</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
